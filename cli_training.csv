@@ -1,0 +1,331 @@
+input:,output:
+echo command usage ,"👉 Printing a String
+➡️ echo Hello, World!
+
+👉 Writing to a File
+➡️ echo -e 'Hello, World! \nThis is PNAP!' >> test.txt
+
+👉 Writing to a File and the Terminal
+➡️ echo ""Hello, world!"" | tee output.txt
+
+👉Displaying a Variable Value
+➡️ echo $USER
+
+👉Omitting Trailing Newline
+➡️ echo -n ""Enter your name: ""
+
+👉Listing the Current Directory Contents
+➡️ echo */
+
+👉Listing Specific Types of Files
+➡️ echo *.txt
+"
+ping command usage ,"👉 ping Command Syntax
+➡️ ping [options] [hostname/IP address]
+
+👉 Specify the Internet Protocol
+➡️ ping -6 [hostname]
+
+👉Change Time Interval Between Ping Packets
+➡️ ping -i 0.5 google.com
+
+👉Limit Number of Ping Packets
+➡️ ping -c 2 google.com
+
+👉Suppress ping Output to Print only Summary Statistics
+➡️ ping -c 10 -q google.com
+"
+nslookup command,"👉 Basic DNS Lookup
+➡️ nslookup google.com
+
+👉 Specify a Different DNS Server
+➡️ nslookup google.com 8.8.8.8
+
+👉 Query for Specific Record Type
+➡️ nslookup -type=MX google.com
+
+👉 Interactive Mode
+➡️ nslookup
+   > set type=A
+   > google.com
+   > exit
+
+👉 Display Debugging Information
+➡️ nslookup -debug google.com
+
+👉View Domain's NS Records
+➡️ nslookup -type=ns [domain-name]
+
+👉 View Information About a Specific Name Server
+➡️ nslookup [domain-name] [name-server]
+"
+command to search text ,"👉 Basic Text Search in a File
+➡️ grep ""search_term"" file.txt
+
+👉 Case-Insensitive Text Search
+➡️ grep -i ""search_term"" file.txt
+
+👉 Recursive Search in Directories
+➡️ grep -r ""search_term"" directory/
+
+👉 Search for a Whole Word
+➡️ grep -w ""search_term"" file.txt
+
+👉 Display Line Numbers With Results
+➡️ grep -n ""search_term"" file.txt
+
+👉 Display Only Matching File Names
+➡️ grep -l ""search_term"" *.txt
+
+👉 Invert the Search
+➡️ grep -v ""search_term"" file.txt
+
+👉 Search Multiple Files
+➡️ grep ""search_term"" file1.txt file2.txt
+"
+use jq to get name and ip from pod ,"👉 Extracting Name and IP from Pod JSON
+➡️ kubectl get pods -o json | jq '.items[] | {name: .metadata.name, ip: .status.podIP}'
+
+‼️ Other example usage 
+👉 list pod status
+➡️ kubectl -n "
+command to exec into pod," 👉 Basic Command Execution in a Pod
+➡️ kubectl exec -it "
+helm commands ,"👉 Installing a Helm Chart
+➡️ helm install my-release stable/my-chart
+
+👉 Listing Installed Helm Releases
+➡️ helm list
+
+👉 Uninstalling a Helm Release
+➡️ helm uninstall my-release
+
+👉 Upgrading a Helm Release
+➡️ helm upgrade my-release stable/my-chart
+
+👉 Getting Helm Chart Information
+➡️ helm show chart stable/my-chart
+
+👉 Getting Helm Chart Values
+➡️ helm show values stable/my-chart
+
+👉 Creating a New Chart
+➡️ helm create my-chart
+
+👉 Fetching a Helm Chart
+➡️ helm fetch stable/my-chart
+"
+input:,output:
+echo command usage ,"👉 Printing a String
+➡️ echo Hello, World!
+
+👉 Writing to a File
+➡️ echo -e 'Hello, World! \nThis is PNAP!' >> test.txt
+
+👉 Writing to a File and the Terminal
+➡️ echo ""Hello, world!"" | tee output.txt
+
+👉Displaying a Variable Value
+➡️ echo $USER
+
+👉Omitting Trailing Newline
+➡️ echo -n ""Enter your name: ""
+
+👉Listing the Current Directory Contents
+➡️ echo */
+
+👉Listing Specific Types of Files
+➡️ echo *.txt
+"
+ping command usage ,"👉 ping Command Syntax
+➡️ ping [options] [hostname/IP address]
+
+👉 Specify the Internet Protocol
+➡️ ping -6 [hostname]
+
+👉Change Time Interval Between Ping Packets
+➡️ ping -i 0.5 google.com
+
+👉Limit Number of Ping Packets
+➡️ ping -c 2 google.com
+
+👉Suppress ping Output to Print only Summary Statistics
+➡️ ping -c 10 -q google.com
+"
+nslookup command,"👉 Basic DNS Lookup
+➡️ nslookup google.com
+
+👉 Specify a Different DNS Server
+➡️ nslookup google.com 8.8.8.8
+
+👉 Query for Specific Record Type
+➡️ nslookup -type=MX google.com
+
+👉 Interactive Mode
+➡️ nslookup
+   > set type=A
+   > google.com
+   > exit
+
+👉 Display Debugging Information
+➡️ nslookup -debug google.com
+
+👉View Domain's NS Records
+➡️ nslookup -type=ns [domain-name]
+
+👉 View Information About a Specific Name Server
+➡️ nslookup [domain-name] [name-server]
+"
+command to search text ,"👉 Basic Text Search in a File
+➡️ grep ""search_term"" file.txt
+
+👉 Case-Insensitive Text Search
+➡️ grep -i ""search_term"" file.txt
+
+👉 Recursive Search in Directories
+➡️ grep -r ""search_term"" directory/
+
+👉 Search for a Whole Word
+➡️ grep -w ""search_term"" file.txt
+
+👉 Display Line Numbers With Results
+➡️ grep -n ""search_term"" file.txt
+
+👉 Display Only Matching File Names
+➡️ grep -l ""search_term"" *.txt
+
+👉 Invert the Search
+➡️ grep -v ""search_term"" file.txt
+
+👉 Search Multiple Files
+➡️ grep ""search_term"" file1.txt file2.txt
+"
+use jq to get name and ip from pod ,"👉 Extracting Name and IP from Pod JSON
+➡️ kubectl get pods -o json | jq '.items[] | {name: .metadata.name, ip: .status.podIP}'
+
+‼️ Other example usage 
+👉 list pod status
+➡️ kubectl -n "
+command to exec into pod," 👉 Basic Command Execution in a Pod
+➡️ kubectl exec -it "
+helm commands ,"👉 Installing a Helm Chart
+➡️ helm install my-release stable/my-chart
+
+👉 Listing Installed Helm Releases
+➡️ helm list
+
+👉 Uninstalling a Helm Release
+➡️ helm uninstall my-release
+
+👉 Upgrading a Helm Release
+➡️ helm upgrade my-release stable/my-chart
+
+👉 Getting Helm Chart Information
+➡️ helm show chart stable/my-chart
+
+👉 Getting Helm Chart Values
+➡️ helm show values stable/my-chart
+
+👉 Creating a New Chart
+➡️ helm create my-chart
+
+👉 Fetching a Helm Chart
+➡️ helm fetch stable/my-chart
+"
+find command with xargs," 👉 Finding Files and Executing Commands with xargs
+➡️ find . -name ""*.txt"" -print0 | xargs -0 grep ""search_term""
+
+👉 Finding Files and Deleting Them
+➡️ find . -name ""*.log"" -print0 | xargs -0 rm
+
+👉 Finding Files and Changing Permissions
+➡️ find . -type f -print0 | xargs -0 chmod 644
+
+👉 Finding Directories and Listing Them
+➡️ find . -type d -print0 | xargs -0 ls -ld
+
+👉 Running a Command on Found Files in Parallel
+➡️ find . -name ""*.jpg"" -print0 | xargs -0 -P 4 convert -resize 800x600
+
+👉 Executing a Command that Needs Multiple Arguments
+➡️ find . -type f -name ""*.mp4"" -print0 | xargs -0 -I {} ffmpeg -i {} -c:v libx264 {}.mp4input: scp command usageoutput: 👉 Securely Copying a Local File to a Remote Server
+➡️ scp local_file.txt user@remote_host:/path/to/destination
+
+👉 Securely Copying a Local Directory to a Remote Server
+➡️ scp -r local_directory user@remote_host:/path/to/destination
+
+👉 Securely Copying a Remote File to Local Machine
+➡️ scp user@remote_host:/path/to/remote_file.txt local_destination
+
+👉 Securely Copying a Remote Directory to Local Machine
+➡️ scp -r user@remote_host:/path/to/remote_directory local_destination
+
+👉 Using a Different Port for SCP
+➡️ scp -P 2222 local_file.txt user@remote_host:/path/to/destination
+
+👉 Preserving Modification Times and Access Times
+➡️ scp -p local_file.txt user@remote_host:/path/to/destination
+
+👉 Limiting Bandwidth Usage
+➡️ scp -l 100 local_file.txt user@remote_host:/path/to/destination"
+aws eks commands,"👉 Creating an EKS Cluster
+➡️ aws eks create-cluster --name my-cluster --region us-west-2 --version 1.23 --role-arn arn:aws:iam::123456789012:role/eks-cluster-role --resources-vpc-config subnetIds=subnet-0123456789abcdef0,subnet-abcdef01234567890,securityGroupIds=sg-0123456789abcdef0
+
+👉 Listing EKS Clusters
+➡️ aws eks list-clusters
+
+👉 Describing an EKS Cluster
+➡️ aws eks describe-cluster --name my-cluster
+
+👉 Updating an EKS Cluster
+➡️ aws eks update-cluster-version --name my-cluster --version 1.24
+
+👉 Deleting an EKS Cluster
+➡️ aws eks delete-cluster --name my-cluster
+
+👉 Creating an EKS Node Group
+➡️ aws eks create-nodegroup --cluster-name my-cluster --nodegroup-name my-nodegroup --node-role arn:aws:iam::123456789012:role/eks-node-role --subnets subnet-0123456789abcdef0,subnet-abcdef01234567890 --scaling-config minSize=2,maxSize=4,desiredSize=2 --instance-types t3.medium
+
+👉 Updating an EKS Node Group
+➡️ aws eks update-nodegroup-version --cluster-name my-cluster --nodegroup-name my-nodegroup --version 1.24
+
+👉 Deleting an EKS Node Group
+➡️ aws eks delete-nodegroup --cluster-name my-cluster --nodegroup-name my-nodegroup
+
+👉 Getting Credentials to Access Cluster
+➡️ aws eks --region us-west-2 update-kubeconfig --name my-cluster
+"
+ docker commands with aws ecr,"👉 Building a Docker Image
+➡️ docker build -t my-image .
+
+👉 Tagging a Docker Image
+➡️ docker tag my-image:latest 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-repo:latest
+
+👉 Logging into ECR
+➡️ aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-west-2.amazonaws.com
+
+👉 Pushing a Docker Image to ECR
+➡️ docker push 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-repo:latest
+
+👉 Pulling a Docker Image from ECR
+➡️ docker pull 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-repo:latest
+
+👉 Running a Docker Container
+➡️ docker run -d -p 80:80 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-repo:latest
+
+👉 Listing Docker Images
+➡️ docker images
+
+👉 Listing Docker Containers
+➡️ docker ps
+
+👉 Stopping a Docker Container
+➡️ docker stop <container_id>
+
+👉 Removing a Docker Container
+➡️ docker rm <container_id>
+
+👉 Removing a Docker Image
+➡️ docker rmi <image_id>
+"
+,
